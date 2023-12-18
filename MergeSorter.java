@@ -5,8 +5,8 @@ import java.util.Comparator;
 /**
  * A simple way to sort arrays using merge sort.
  *
- * @author YourName Here
- * @author Your NameHere
+ * @author Shuta Shibue
+ * @author Audrey Trinh
  * @author Samuel A. Rebelsky
  */
 public class MergeSorter {
@@ -25,8 +25,7 @@ public class MergeSorter {
     // sort left half and then right half
     sort(vals, comparator);
     merge(vals, rightIndex, midIndex, leftIndex, comparator);
-    
-    // STUB
+  
   } // sort
 
   // +-----------------+---------------------------------------------
@@ -41,7 +40,6 @@ public class MergeSorter {
    */
   @SuppressWarnings("unchecked")
   static <T> void merge(T[] vals, int lo, int mid, int hi, Comparator<? super T> comparator) {
-    // STUB
     int loi = lo;
     int hii = mid;
     ArrayList<T> temp = new ArrayList<T>();
